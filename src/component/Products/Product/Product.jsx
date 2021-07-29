@@ -3,23 +3,25 @@ import {
   Card,
   CardMedia,
   CardContent,
-  CardAction,
   Typography,
   IconButton,
   CardActions,
 } from '@material-ui/core'
 
 import { AddShoppingCart } from '@material-ui/icons'
-import { classes } from 'istanbul-lib-coverage'
+
 import useStyles from './Styles'
 
 const Product = ({ product }) => {
   const classes = useStyles()
+
+  console.log(product)
+
   return (
     <Card className={classes.root}>
       <CardMedia
         className={classes.media}
-        image={product.image}
+        image={product.media.source}
         tittle={product.name}
       />
       <CardContent>
@@ -28,11 +30,11 @@ const Product = ({ product }) => {
             {product.name}
           </Typography>
 
-          <Typography variant='h5'>{product.price}</Typography>
+          <Typography variant='h5'>
+            {product.price.formatted_with_symbol}
+          </Typography>
         </div>
-        <Typography variant='h6' color='textSecondary'>
-          {product.description}
-        </Typography>
+        <Typography variant='h6' color='textSecondary'></Typography>
       </CardContent>
 
       <CardActions>

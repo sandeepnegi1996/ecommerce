@@ -5,15 +5,12 @@ import {
   Toolbar,
   IconButton,
   Badge,
-  MenuItem,
-  Menu,
   Typography,
 } from '@material-ui/core'
 
 import { ShoppingCart } from '@material-ui/icons'
 
 import commerceicon from '../../assets/commerce.png'
-import { classes } from 'istanbul-lib-coverage'
 import useStyles from './Styles'
 
 const Navbar = () => {

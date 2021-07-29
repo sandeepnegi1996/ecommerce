@@ -3,7 +3,7 @@ import React from 'react'
 const App = () => {
   return (
     <div>
-      <h1> hello World ecommerce site</h1>
+      <h1> hello World ecommerce website</h1>
     </div>
   )
 }
